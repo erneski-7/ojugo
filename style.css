@@ -1,0 +1,256 @@
+/* ===============================
+   CYBERSECURITY COLOR THEME
+================================ */
+
+:root{
+    --bg:#08111f;
+    --card:#111827;
+    --green:#00ff9d;
+    --blue:#00bfff;
+    --purple:#9b5cff;
+    --orange:#ff9800;
+    --white:#ffffff;
+    --gray:#c9d1d9;
+}
+
+/* Background */
+
+body{
+    background:linear-gradient(135deg,#08111f,#111827,#0f172a);
+    color:var(--white);
+    font-family:'Fira Code', monospace;
+}
+
+/* Navigation */
+
+nav{
+    background:rgba(5,10,20,.90);
+    border-bottom:2px solid var(--green);
+}
+
+.logo{
+    color:var(--green);
+    text-shadow:0 0 15px var(--green);
+}
+
+nav ul li a{
+    color:var(--white);
+}
+
+nav ul li a:hover{
+    color:var(--blue);
+}
+
+/* Hero */
+
+header{
+    background:
+    linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.9)),
+    url("https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=80");
+    background-size:cover;
+}
+
+.hero h1{
+    color:var(--green);
+    text-shadow:0 0 25px var(--green);
+}
+
+.hero h3{
+    color:var(--blue);
+}
+
+.hero p{
+    color:var(--gray);
+}
+
+/* Buttons */
+
+.btn{
+
+    background:linear-gradient(45deg,var(--green),var(--blue));
+    color:black;
+    font-weight:bold;
+    border:none;
+    transition:.4s;
+
+}
+
+.btn:hover{
+
+    transform:scale(1.08);
+
+    box-shadow:
+    0 0 20px var(--green),
+    0 0 40px var(--blue);
+
+}
+
+/* Headings */
+
+section h2{
+
+    color:var(--purple);
+
+    text-shadow:0 0 15px var(--purple);
+
+}
+
+/* Cards */
+
+.card{
+
+    background:var(--card);
+
+    border-top:4px solid var(--green);
+
+    transition:.4s;
+
+}
+
+.card:hover{
+
+    border-top:4px solid var(--blue);
+
+    transform:translateY(-8px);
+
+    box-shadow:
+
+    0 0 20px rgba(0,255,157,.4);
+
+}
+
+.card h3{
+
+    color:var(--green);
+
+}
+
+/* Skills */
+
+.skill{
+
+    background:linear-gradient(90deg,var(--green),var(--blue));
+
+    color:black;
+
+    padding:10px 20px;
+
+    border-radius:30px;
+
+    display:inline-block;
+
+    margin:8px;
+
+    font-weight:bold;
+
+}
+
+/* Projects */
+
+.project{
+
+    background:#162033;
+
+    border-left:6px solid var(--purple);
+
+}
+
+.project h3{
+
+    color:var(--green);
+
+}
+
+.project:hover{
+
+    box-shadow:
+
+    0 0 20px var(--purple);
+
+}
+
+/* Timeline */
+
+.timeline-item::before{
+
+    background:var(--orange);
+
+    box-shadow:0 0 10px var(--orange);
+
+}
+
+/* Footer */
+
+footer{
+
+    background:#050b16;
+
+    border-top:2px solid var(--green);
+
+}
+
+footer p{
+
+    color:var(--gray);
+
+}
+
+/* Links */
+
+a{
+
+    color:var(--blue);
+
+}
+
+a:hover{
+
+    color:var(--green);
+
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar{
+
+    width:12px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:linear-gradient(var(--green),var(--blue));
+
+    border-radius:20px;
+
+}
+
+/* Glow Animation */
+
+.glow{
+
+    animation:glow 2s infinite alternate;
+
+}
+
+@keyframes glow{
+
+    from{
+
+        text-shadow:0 0 5px var(--green);
+
+    }
+
+    to{
+
+        text-shadow:
+
+        0 0 15px var(--green),
+
+        0 0 35px var(--blue),
+
+        0 0 55px var(--purple);
+
+    }
+
+}
